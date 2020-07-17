@@ -11,19 +11,19 @@
 */
 
 // Código muito ruim 🤮
-var tecla_precionada = 'cima'
+var tecla_pressionada = 'cima'
 
 // Para cada possibilidade é preciso criar uma condição.
-if ( tecla_precionada == 'cima' ) {
+if ( tecla_pressionada == 'cima' ) {
   console.log('Movendo para cima')
 }
-else if ( tecla_precionada == 'baixo' ) {
+else if ( tecla_pressionada == 'baixo' ) {
   console.log('Movendo para baixo')
 }
-else if ( tecla_precionada == 'lado_direito' ) {
+else if ( tecla_pressionada == 'lado_direito' ) {
   console.log('Movendo para lado direito')
 }
-else if ( tecla_precionada == 'lado_esquerdo' ) {
+else if ( tecla_pressionada == 'lado_esquerdo' ) {
   console.log('Movendo para lado esquerdo')
 }
 else {
@@ -31,10 +31,10 @@ else {
 }
 
 // Código ruim 🤢
-var tecla_precionada = 'baixo'
+var tecla_pressionada = 'baixo'
 
-// Da mesma forma do anterior, para cada possibilidade é preciso criar uma condição.
-switch (tecla_precionada) {
+// Para cada possibilidade é preciso criar uma condição.
+switch (tecla_pressionada) {
   case 'cima':
     console.log('Movendo para cima')
     break
@@ -78,7 +78,7 @@ switch (tecla_precionada) {
 
 // Código bom 😍
 
-var tecla_precionada = 'lado_direito'
+var tecla_pressionada = 'lado_direito'
 
 // Cria um objeto com as possibilidates de teclas
 const teclas = {
@@ -88,12 +88,12 @@ const teclas = {
   lado_esquerdo: 'Movendo para o lado esquerdo'
 }
 
-// Pede um valor de acordo com a tecla precionada, se ele não achar retorna Parado
-console.log(teclas[tecla_precionada] || 'Parado') // Movendo para o lado direito
+// Pede um valor de acordo com a tecla pressionada, se ele não achar retorna Parado
+console.log(teclas[tecla_pressionada] || 'Parado') // Movendo para o lado direito
 
 // Código muito bom 🥰
 
-var tecla_precionada = 'lado_esquerdo'
+var tecla_pressionada = 'lado_esquerdo'
 
 function retornaEstado(tecla) {
   return (
@@ -106,4 +106,4 @@ function retornaEstado(tecla) {
   )
 }
 
-console.log(retornaEstado(tecla_precionada)) //Movendo para o lado esquerdo
+console.log(retornaEstado(tecla_pressionada)) //Movendo para o lado esquerdo
